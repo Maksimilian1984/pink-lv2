@@ -6,8 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="build/css/style.css">
 </head>
-<body>
+<body class="body">
   <header class="page-header">
     <a class="page-header__logo" href="">
         <img class="page-header__img" src="" alt="Pink">
@@ -15,11 +16,11 @@
     <nav class="main-nav">
         <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
-            <ul class="main-nav__list menu-list">
-                <li class="menu-list__item menu-list__item--active"><a href="">Главная</a></li>
-                <li class="menu-list__item"><a href="">Фотографии</a></li>
-                <li class="menu-list__item"><a href="">Конкурс</a></li>
-                <li class="menu-list__item"><a href="">HTML ACADEMY</a></li>
+            <ul class="main-nav__list menu">
+                <li class="menu__item menu__item--active"><a class="menu__link" href="">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Фотографии</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Конкурс</a></li>
+                <li class="menu__item"><a class="menu__link" href="">HTML ACADEMY</a></li>
             </ul>
         </div>
     </nav>
@@ -119,8 +120,8 @@
               <input class="photo-upload__range photo-upload__range--cut" type="range">
               <input class="photo-upload__range photo-upload__range--brightness" type="range">
               <input class="photo-upload__range photo-upload__range--contrast" type="range">
-              <button class="photo-upload__button button" type="button">Запостить</button>
-              <button class="photo-upload__button button" type="reset">Отмена</button>
+              <button class="photo-upload__button button button--mod280-red" type="button">Запостить</button>
+              <button class="photo-upload__button button button--mod280-grey" type="reset">Отмена</button>
           </form>
       </section>
   </main>
@@ -131,7 +132,7 @@
           <li class="social__item social__item--fb"><a href=""></a></li>
           <li class="social__item social__item--y"><a href=""></a></li>
       </ul>
-      <span class="footer__copyright copyright">Разработано<a href="">
+      <span class="footer__copyright copyright">Разработано<a class="copyright__link" href="">
            <img class="copyright__img" src="" alt=""></a>
        </span>
   </footer>

@@ -1,0 +1,29 @@
+.button-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 50px;
+  height: 24px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover > .button-toggle__item {
+    background-color: #d22856;
+  }
+  &:active > .button-toggle__item {
+    background-color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.button-toggle__item {
+  width: 50px;
+  height: 4px;
+
+  background-color: #ffffff;
+
+}

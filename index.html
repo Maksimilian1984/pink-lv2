@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="build/css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="body">
   <header class="page-header">
-      <a class="page-header__logo" href="">
-          <img class="page-header__img" src="" alt="Pink">
-      </a>
+      <div class="page-header__wrapper">
+          <img class="page-header__logo logo" src="img/PINK-logo-text.png" alt="Pink" width="74" height="23">
+      <button class="page-header__toggle button-toggle" type="button">
+          <div class="button-toggle__item button-toggle__item--1"></div>
+          <div class="button-toggle__item button-toggle__item--2"></div>
+          <div class="button-toggle__item button-toggle__item--3"></div>
+      </button>
+      </div>
       <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"></button>
           <div class="main-nav__wrapper">
-          <ul class="main-nav__list menu-list">
-              <li class="menu-list__item menu-list__item--active"><a href="">Главная</a></li>
-              <li class="menu-list__item"><a href="">Фотографии</a></li>
-              <li class="menu-list__item"><a href="">Конкурс</a></li>
-              <li class="menu-list__item"><a href="">HTML ACADEMY</a></li>
+          <ul class="main-nav__list menu">
+              <li class="menu__item menu__item--active"><a class="menu__link" href="">Главная</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Фотографии</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Конкурс</a></li>
+              <li class="menu__item"><a class="menu__link" href="">HTML ACADEMY</a></li>
           </ul>
           </div>
       </nav>
       <section class="banner">
           <h2 class="banner__title">Взгляните на жизнь иначе!</h2>
-          <a class="bunner__button button"></a>
+          <button class="bunner__button button">Скачать приложение</button>
           <ul class="bunner__list-platforms">
               <li class="bunner__item-platforms"><img src="" alt="iOS"></li>
               <li class="bunner__item-platforms"><img src="" alt="Android"></li>
@@ -114,5 +117,6 @@
           <img class="contacts__map" src="" alt="Map">
       </section>
   </footer>
+  <script src="pink.js"></script>
 </body>
 </html>
