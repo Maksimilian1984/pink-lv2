@@ -10,22 +10,26 @@
 </head>
 <body class="body">
   <header class="page-header">
-    <a class="page-header__logo" href="">
-        <img class="page-header__img" src="" alt="Pink">
-    </a>
-    <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
-            <ul class="main-nav__list menu">
-                <li class="menu__item menu__item--active"><a class="menu__link" href="">Главная</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Фотографии</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Конкурс</a></li>
-                <li class="menu__item"><a class="menu__link" href="">HTML ACADEMY</a></li>
-            </ul>
-        </div>
-    </nav>
+      <nav class="page-header__main-nav main-nav">
+          <div class="page-header__wrapper-toggle">
+              <img class="page-header__logo logo" src="src/img/PINK-logo-text.png" alt="Pink" width="74" height="23">
+              <button class="page-header__toggle button-toggle" type="button">
+                  <div class="button-toggle__item button-toggle__item-1"></div>
+                  <div class="button-toggle__item button-toggle__item-2"></div>
+                  <div class="button-toggle__item button-toggle__item-3"></div>
+                  </button>
+          </div>
+              <ul class="main-nav__list menu">
+                  <li class="menu__item menu__item--active"><a class="menu__link" href="">Главная</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Фотографии</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Конкурс</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">HTML ACADEMY</a></li>
+              </ul>
+          </nav>
       <section class="banner">
-          <h2 class="banner__title">Фотографии пользователей</h2>
+          <div class="banner__part-1 banner__part-1--photo">
+              <h2 class="banner__title">Фотографии <br> пользователей</h2>
+          </div>
       </section>
   </header>
   <main class="page-main">
@@ -136,6 +140,7 @@
            <img class="copyright__img" src="" alt=""></a>
        </span>
   </footer>
+  <script src="src/js/pink.js"></script>
 </body>
 </html>
 

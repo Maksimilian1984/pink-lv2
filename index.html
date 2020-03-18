@@ -8,35 +8,36 @@
 </head>
 <body class="body">
   <header class="page-header">
-      <div class="page-header__wrapper">
-          <img class="page-header__logo logo" src="img/PINK-logo-text.png" alt="Pink" width="74" height="23">
-      <button class="page-header__toggle button-toggle" type="button">
-          <div class="button-toggle__item button-toggle__item--1"></div>
-          <div class="button-toggle__item button-toggle__item--2"></div>
-          <div class="button-toggle__item button-toggle__item--3"></div>
-      </button>
-      </div>
-      <nav class="main-nav">
-          <div class="main-nav__wrapper">
+      <nav class="page-header__main-nav main-nav">
+          <div class="page-header__wrapper-toggle">
+              <img class="page-header__logo logo" src="src/img/PINK-logo-text.png" alt="Pink" width="74" height="23">
+              <button class="page-header__toggle button-toggle" type="button">
+                  <div class="button-toggle__item button-toggle__item-1"></div>
+                  <div class="button-toggle__item button-toggle__item-2"></div>
+                  <div class="button-toggle__item button-toggle__item-3"></div>
+              </button>
+          </div>
           <ul class="main-nav__list menu">
               <li class="menu__item menu__item--active"><a class="menu__link" href="">Главная</a></li>
               <li class="menu__item"><a class="menu__link" href="">Фотографии</a></li>
               <li class="menu__item"><a class="menu__link" href="">Конкурс</a></li>
               <li class="menu__item"><a class="menu__link" href="">HTML ACADEMY</a></li>
           </ul>
-          </div>
       </nav>
       <section class="banner">
-          <h2 class="banner__title">Взгляните на жизнь иначе!</h2>
-          <button class="bunner__button button">Скачать приложение</button>
-          <ul class="bunner__list-platforms">
-              <li class="bunner__item-platforms"><img src="" alt="iOS"></li>
-              <li class="bunner__item-platforms"><img src="" alt="Android"></li>
-              <li class="bunner__item-platforms"><img src="" alt="Windows"></li>
+          <div class="banner__part-1 banner__part-1--index">
+          </div>
+          <div class="banner__part-2">
+          <button class="banner__button button">Скачать приложение</button>
+          <ul class="banner__list-platforms">
+              <li class="banner__item-platforms"><img src="" alt="iOS"></li>
+              <li class="banner__item-platforms"><img src="" alt="Android"></li>
+              <li class="banner__item-platforms"><img src="" alt="Windows"></li>
           </ul>
           <p class="bunner__text">
               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window
           </p>
+          </div>
       </section>
   </header>
   <main class="page-main">
@@ -117,6 +118,6 @@
           <img class="contacts__map" src="" alt="Map">
       </section>
   </footer>
-  <script src="pink.js"></script>
+  <script src="src/js/pink.js"></script>
 </body>
 </html>
