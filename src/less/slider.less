@@ -1,3 +1,36 @@
+.slider__toggles {
+  position: absolute;
+  top: 298px;
+  left:50%;
 
+  margin: 0;
+  display: flex;
 
-.slider__toggles {}
+  transform: translateX(-50%);
+}
+
+.slider__toggle-input {
+  display: none;
+  &:checked + .slider__toggles-label {
+    border: 3px solid #283645;
+    background-color: transparent;
+  }
+}
+
+.slider__toggles-label {
+
+  display: block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background-color: #bec2c7;
+}
+
+.slide-on {
+  display: block;
+}
+
