@@ -55,59 +55,67 @@
               друзьями и заводите новых</p>
       </section>
       <section class="reviews">
-          <div class="reviews__wrapper slider">
-          <blockquote class="reviews__item">
+          <div class="reviews__wrapper slider slider-1">
+          <blockquote class="reviews__item reviews__item-1">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                   привычные серые вещи! А еще я познакомился
                   со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
-          <blockquote class="reviews__item">
-              <cite class="reviews__author">Николай Петров</cite>
+          <blockquote class="reviews__item reviews__item-2">
+              <cite class="reviews__author">Василий Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                   привычные серые вещи! А еще я познакомился
                   со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
-          <blockquote class="reviews__item">
+          <blockquote class="reviews__item reviews__item-3">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                   привычные серые вещи! А еще я познакомился
                   со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
               <p class="reviews__toggles slider__toggles">
-                  <input class="slider__toggle" type="checkbox" name="reviews-slider__toggle-1" id="reviews-slider__toggle-1">
-                  <label for="reviews-slider__toggle-1"></label>
-                  <input class="slider__toggle" name="reviews-slider__toggle-2" id="reviews-slider__toggle-2" type="checkbox">
-                  <label for="reviews-slider__toggle-2"></label>
-                  <input class="slider__toggle" name="reviews-slider__toggle-3" id="reviews-slider__toggle-3" type="checkbox">
-                  <label for="reviews-slider__toggle-3"></label>
+                  <input class="slider__toggle-input slider-1__toggle-input-1" type="radio" name="reviews-slider__toggle" id="reviews-slider__toggle-1" checked>
+                  <label class="slider__toggles-label" for="reviews-slider__toggle-1"></label>
+                  <input class="slider__toggle-input slider-1__toggle-input-2" name="reviews-slider__toggle" id="reviews-slider__toggle-2" type="radio">
+                  <label class="slider__toggles-label" for="reviews-slider__toggle-2"></label>
+                  <input class="slider__toggle-input slider-1__toggle-input-3" name="reviews-slider__toggle" id="reviews-slider__toggle-3" type="radio">
+                  <label class="slider__toggles-label" for="reviews-slider__toggle-3"></label>
               </p>
           </div>
       </section>
       <section class="prise">
-          <div class="prise__wrapper slider">
+          <div class="prise__wrapper slider slider-2">
               <table class="prise__table">
                   <tr>
-                      <td class="prise__tariff">База <br> <span class="prise__cost">1,99 USD</span></td>
-                      <td class="prise__tariff">Стандарт <br> <span class="prise__cost">3,99 USD</span></td>
-                      <td class="prise__tariff">АНЛИМ <br> <span class="prise__cost">3,99 USD</span></td>
+                      <td class="prise__tariff">База <br> <span class="prise__tariff--cost">1,99 USD</span></td>
+                      <td class="prise__tariff">Стандарт <br> <span class="prise__tariff--cost">3,99 USD</span></td>
+                      <td class="prise__tariff">АНЛИМ <br> <span class="prise__tariff--cost">3,99 USD</span></td>
                   </tr>
                   <tr>
-                      <td class="prise__option-filter">Розовый фильтр</td>
-                      <td class="prise__option-filter">Розовый фильтр</td>
-                      <td class="prise__option-filter">Розовый фильтр</td>
+                      <td class="prise__option prise__option--check">Розовый фильтр</td>
+                      <td class="prise__option prise__option--check">Розовый фильтр</td>
+                      <td class="prise__option prise__option--check">Розовый фильтр</td>
                   </tr>
                   <tr>
-                      <td class="prise__option-emoji">Смайлики</td>
-                      <td class="prise__option-emoji">Смайлики</td>
-                      <td class="prise__option-emoji">Смайлики</td>
+                      <td class="prise__option prise__option--cross">Смайлики</td>
+                      <td class="prise__option prise__option--check">Смайлики</td>
+                      <td class="prise__option prise__option--check">Смайлики</td>
                   </tr>
                   <tr>
-                      <td class="prise__option-comment">Комментарии</td>
-                      <td class="prise__option-comment">Комментарии</td>
-                      <td class="prise__option-comment">Комментарии</td>
+                      <td class="prise__option prise__option--cross">Комментарии</td>
+                      <td class="prise__option prise__option--check">Комментарии</td>
+                      <td class="prise__option prise__option--check">Комментарии</td>
                   </tr>
               </table>
+              <p class="prise__toggles slider__toggles slider__toggles--2">
+                  <input class="slider__toggle-input slider-2__toggle-input-1" type="radio" name="reviews-slider-2__toggle" id="reviews-slider-2__toggle-1" checked>
+                  <label class="slider__toggles-label" for="reviews-slider-2__toggle-1"></label>
+                  <input class="slider__toggle-input slider-2__toggle-input-2" name="reviews-slider-2__toggle" id="reviews-slider-2__toggle-2" type="radio">
+                  <label class="slider__toggles-label" for="reviews-slider-2__toggle-2"></label>
+                  <input class="slider__toggle-input slider-2__toggle-input-3" name="reviews-slider-2__toggle" id="reviews-slider-2__toggle-3" type="radio">
+                  <label class="slider__toggles-label" for="reviews-slider-2__toggle-3"></label>
+              </p>
           </div>
       </section>
   </main>
@@ -121,5 +129,7 @@
       </section>
   </footer>
   <script src="src/js/pink.js"></script>
+  <script src="src/js/slider-1.js"></script>
+  <script src="src/js/slider-2.js"></script>
 </body>
 </html>
