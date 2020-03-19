@@ -6,7 +6,6 @@
   padding-top: 110px;
 
 
-
   &--index {
 
     background-image:
@@ -35,7 +34,12 @@
 
 
 .banner__part-2 {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   min-height: 270px;
+  padding-top: 28px;
+
 }
 
 .banner__title {
@@ -47,3 +51,39 @@
   color: white;
   text-align: center;
 }
+
+.banner__button {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+
+
+}
+
+.banner__list-platforms {
+  height: 47px;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  color: #ffffff;
+}
+
+.banner__item-platforms:not(:nth-of-type(3)) {
+  margin-right: 37px;
+}
+
+.banner__text {
+  margin: 0;
+
+  font-family: @fontOpenSansLite;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+
+}
+
