@@ -89,7 +89,9 @@
               <table class="prise__table">
                   <tr>
                       <td class="prise__tariff">База <br> <span class="prise__tariff--cost">1,99 USD</span></td>
-                      <td class="prise__tariff">Стандарт <br> <span class="prise__tariff--cost">3,99 USD</span></td>
+                      <td class="prise__tariff">Стандарт <br> <span class="prise__tariff--cost">
+                          <img class="prise__img" src="build/img/hit-banner.png" alt="hit" width="74" height="73">
+                          3,99 USD</span></td>
                       <td class="prise__tariff">АНЛИМ <br> <span class="prise__tariff--cost">3,99 USD</span></td>
                   </tr>
                   <tr>
@@ -104,7 +106,7 @@
                   </tr>
                   <tr>
                       <td class="prise__option prise__option--cross">Комментарии</td>
-                      <td class="prise__option prise__option--check">Комментарии</td>
+                      <td class="prise__option prise__option--cross">Комментарии</td>
                       <td class="prise__option prise__option--check">Комментарии</td>
                   </tr>
               </table>
@@ -121,11 +123,15 @@
   </main>
   <footer class="page-footer">
       <section class="contacts">
+          <div class="contacts__wrapper">
           <h2 class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</h2>
-          <p class="contacts__text">Звоните: <span>+7 (812) 555-66-66</span></p>
-          <p class="contacts__text">Пишите:<span>mail@htmlacademy.ru</span></p>
-          <p class="contacts__text">Приезжайте в гости:<span>ул. Большая Конюшенная, 19/8</span></p>
-          <img class="contacts__map" src="" alt="Map">
+          <p class="contacts__text">Звоните: <br> <span class="contacts__text--red">+7 (812) 555-66-66</span></p>
+          <p class="contacts__text">Пишите: <br> <span class="contacts__text--red">mail@htmlacademy.ru</span></p>
+          <p class="contacts__text">Приезжайте в гости: <br> <span class="contacts__text--red">ул. Большая Конюшенная, 19/8</span></p>
+          </div>
+          <div class="contacts__map">
+              <div class="contacts__triangle"></div>
+          </div>
       </section>
   </footer>
   <script src="src/js/pink.js"></script>
