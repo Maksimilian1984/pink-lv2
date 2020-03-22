@@ -13,9 +13,6 @@
   list-style: none;
 }
 
-.menu__item {
-
-}
 
 .menu__link {
   display: block;
@@ -43,4 +40,30 @@
 
 .menu--visible {
   display: block;
+}
+
+
+@media (min-width: 1200px) {
+  .menu {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+
+    background: none;
+  }
+  .menu__item:not(:nth-of-type(4)) {
+    margin-right: 85px;
+
+  }
+  .menu__link {
+    height: auto;
+    padding: 0;
+
+    font-family: @fontOpenSans;
+    text-transform: none;
+
+    border: none;
+  }
+
 }

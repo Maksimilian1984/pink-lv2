@@ -7,7 +7,6 @@
 
 
   &--index {
-
     background-image:
             url("../img/background-nav--hend.png"),
             url("../img/background-nav.png");
@@ -44,7 +43,7 @@
 
 .banner__title {
 
-  margin-top: 0;
+  margin: 0;
 
   font-family: @fontOpenSansLite;
   font-size: 24px;
@@ -84,6 +83,117 @@
   line-height: 24px;
   color: #ffffff;
   text-align: center;
+}
+.banner__title-2 {
+  display: none;
+}
 
+@media (min-width: @tablet) {
+  .banner {
+    position: relative;
+  }
+  .banner__part-1 {
+    min-height: 726px;
+    padding: 0 20px;
+    padding-top: 180px;
+
+    &--index {
+      background-image:
+            url("../img/background-nav--hend660.png"),
+            url("../img/background-nav-660.png");
+      background-position: center 180px,center;
+  }
+    &--photo {
+      min-height: 440px;
+
+      background-image: url("../img/background-nav-660.png");
+      background-position: center;
+
+    }
+    &--form {
+      min-height: 440px;
+
+      background-image: url("../img/background-nav-660.png");
+      background-position: center;
+
+    }
+
+}
+  .banner__part-2 {
+    position: absolute;
+    top: 165px;
+    left: 20px;
+
+    width: 300px;
+
+  }
+  .banner__title-2 {
+    display: block;
+    margin: 0;
+    margin-bottom: 35px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: @fontOpenSansLite;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .banner__button {
+    margin-bottom: 40px;
+  }
+  .banner__list-platforms {
+    margin-bottom: 40px;
+  }
+  .banner__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .banner__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner__part-1 {
+
+    background: none;
+
+    &--photo {
+      min-height: 285px;
+      padding-top: 100px;
+
+      background: none;
+    }
+    &--form {
+      min-height: 285px;
+      padding-top: 100px;
+
+      background: none;
+    }
+
+
+  }
+  .banner {
+    padding: 0 130px;
+  }
+  .banner__part-2 {
+    top: 80px;
+    left: 130px;
+  }
+  .banner__title-2 {
+    margin-bottom: 60px;
+  }
+  .banner__list-platforms {
+    margin-bottom: 65px;
+  }
+  .banner__button {
+    margin-bottom: 60px;
+  }
+  .banner__text {
+    font-size: 18px;
+  }
+
+  
 }
 
