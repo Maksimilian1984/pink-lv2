@@ -1,6 +1,6 @@
 .slider__toggles {
   position: absolute;
-  top: 298px;
+  top: 310px;
   left:50%;
 
   margin: 0;
@@ -34,7 +34,19 @@
   background-color: #bec2c7;
 }
 
-.slide-on {
+.slide-o {
   display: block;
+}
+
+@media (min-width: @tablet) {
+  .slider__toggles {
+    top: 260px;
+
+    &--2 {
+      display: none;
+    }
+  }
+
+
 }
 

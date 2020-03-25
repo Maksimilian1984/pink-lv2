@@ -3,10 +3,12 @@
 
   height: 380px;
 
-  overflow: scroll;
+  overflow: hidden;
 
   background-color: #f2f2f2;
 }
+@media (max-width: @tablet) {
+
 
 .prise__table {
   position: relative;
@@ -27,6 +29,7 @@
 .prise__table--p-3 {
   transform: translateX(-556px);
   transition: transform 0.5s;
+}
 }
 
 .prise__tariff {
@@ -116,5 +119,106 @@
   top: 0;
   left: 0;
 }
+
+.prise__td {
+  display: none;
+}
+
+
+@media (min-width: @tablet) {
+  .prise {
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+  }
+
+  .prise__table {
+    width: 620px;
+
+    border-collapse: collapse;
+  }
+
+  .prise__td {
+    display: table-cell;
+
+    border-right: none;
+  }
+  .prise__tariff.prise__td {
+    background-color: #f2f2f2;
+  }
+
+  .prise__option,
+  .prise__tariff {
+    width: 155px;
+
+    border-right: none;
+  }
+  .prise__tariff {
+    height: 79px;
+
+    font-size: 16px;
+    &--cost {
+      font-size: 18px;
+    }
+  }
+  .prise__option {
+    height: 45px;
+    padding-left: 15px;
+
+    font-size: 14px;
+    text-transform: none;
+    text-align: left;
+
+  }
+  .prise__img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .prise__option-invisible {
+    display: none;
+  }
+
+  .prise__option--cross:after,
+  .prise__option--cross:before {
+    right: 50%;
+  }
+
+  .prise__option--check:after {
+    right: 45%;
+  }
+
+}
+
+@media (min-width: @desktop) {
+  .prise {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .prise__table {
+    width: 940px;
+  }
+  .prise__option,
+  .prise__tariff {
+    width: 235px;
+  }
+  .prise__option {
+    height: 60px;
+
+    font-size: 18px;
+  }
+
+  .prise__tariff {
+    height: 100px;
+
+    font-size: 18px;
+    &--cost {
+      font-size: 24px;
+    }
+  }
+
+
+  }
 
 
