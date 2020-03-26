@@ -10,9 +10,13 @@
   <header class="page-header">
       <nav class="page-header__main-nav main-nav">
           <div class="page-header__wrapper-toggle">
-              <img class="page-header__logo" src="build/img/PINK-logo-text.png" alt="Pink" width="74" height="23">
-              <img class="page-header__logo-660" src="build/img/PINK-logo-img-text.png" alt="Pink" width="147" height="40">
-              <img class="page-header__logo-1200" src="build/img/PINK-logo-img.png" alt="Pink" width="147" height="40">
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="build/img/PINK-logo-img.png">
+                  <source media="(min-width: 660px)" srcset="build/img/PINK-logo-img-text.png">
+                  <img class="page-header__logo" src="build/img/PINK-logo-text.png" alt="Pink">
+             <!-- <img class="page-header__logo-660" src="build/img/PINK-logo-img-text.png" alt="Pink" width="147" height="40">
+              <img class="page-header__logo-1200" src="build/img/PINK-logo-img.png" alt="Pink" width="147" height="40"> -->
+              </picture>
               <button class="page-header__toggle button-toggle" type="button">
                   <div class="button-toggle__item button-toggle__item-1"></div>
                   <div class="button-toggle__item button-toggle__item-2"></div>
@@ -98,21 +102,23 @@
                   со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
           <blockquote class="reviews__item reviews__item-3">
-              <cite class="reviews__author">Николай Петров</cite>
+              <cite class="reviews__author">Иван Петров</cite>
               <span class="reviews__author-info">25 лет, водитель трамвая</span>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
                   привычные серые вещи! А еще я познакомился
                   со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
-              <p class="reviews__toggles slider__toggles">
-                  <input class="slider__toggle-input slider-1__toggle-input-1" type="radio" name="reviews-slider__toggle" id="reviews-slider__toggle-1" checked>
-                  <label class="slider__toggles-label" for="reviews-slider__toggle-1"></label>
-                  <input class="slider__toggle-input slider-1__toggle-input-2" name="reviews-slider__toggle" id="reviews-slider__toggle-2" type="radio">
-                  <label class="slider__toggles-label" for="reviews-slider__toggle-2"></label>
-                  <input class="slider__toggle-input slider-1__toggle-input-3" name="reviews-slider__toggle" id="reviews-slider__toggle-3" type="radio">
-                  <label class="slider__toggles-label" for="reviews-slider__toggle-3"></label>
-              </p>
           </div>
+          <p class="reviews__toggles slider__toggles">
+              <input class="slider__toggle-input slider-1__toggle-input-1" type="radio" name="reviews-slider__toggle" id="reviews-slider__toggle-1" checked>
+              <label class="slider__toggles-label" for="reviews-slider__toggle-1"></label>
+              <input class="slider__toggle-input slider-1__toggle-input-2" name="reviews-slider__toggle" id="reviews-slider__toggle-2" type="radio">
+              <label class="slider__toggles-label" for="reviews-slider__toggle-2"></label>
+              <input class="slider__toggle-input slider-1__toggle-input-3" name="reviews-slider__toggle" id="reviews-slider__toggle-3" type="radio">
+              <label class="slider__toggles-label" for="reviews-slider__toggle-3"></label>
+          </p>
+          <button class="slider__button-1200 slider__button-1200--1"></button>
+          <button class="slider__button-1200 slider__button-1200--2"></button>
       </section>
       <section class="prise">
           <div class="prise__wrapper slider slider-2">
@@ -169,8 +175,10 @@
           </div>
       </section>
       <section class="footer__social social">
-          <img class="page-header__logo-660 footer__logo" src="build/img/PINK-logo-img-text-footer.png" alt="Pink" width="147" height="40">
-          <img class="page-header__logo-1200 footer__logo" src="build/img/PINK-logo-img-text-footer-1200.png" alt="Pink" width="147" height="40">
+          <picture>
+              <source media="(min-width: 1200px)" srcset="build/img/PINK-logo-img-text-footer-1200.png">
+          <img class="footer__logo" src="build/img/PINK-logo-img-text-footer.png" alt="Pink" width="147" height="40">
+          </picture>
           <ul class="social__list">
               <li class="social__item social__item--tw"><a class="social__link social__link--tw" href=""></a></li>
               <li class="social__item social__item--fb"><a class="social__link social__link--fb" href=""></a></li>

@@ -34,9 +34,10 @@
   background-color: #bec2c7;
 }
 
-.slide-o {
-  display: block;
+.slider__button-1200 {
+  display: none;
 }
+
 
 @media (min-width: @tablet) {
   .slider__toggles {
@@ -47,6 +48,41 @@
     }
   }
 
+}
+
+@media (min-width: @desktop) {
+
+  .slider__toggles {
+    display: none;
+  }
+
+  .slider__button-1200 {
+    position: absolute;
+    top: 40%;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    background: none;
+
+    border: 2px solid #b5b9be;
+    border-bottom: none;
+    border-left: none;
+    outline: none;
+
+    cursor: pointer;
+
+    &--1 {
+      left: 100px;
+      transform: rotate(-135deg);
+
+    }
+    &--2 {
+      right: 100px;
+      transform: rotate(45deg);
+    }
+  }
 
 }
 
