@@ -12,9 +12,11 @@
   <header class="page-header page-header--photo">
       <nav class="page-header__main-nav main-nav">
           <div class="page-header__wrapper-toggle">
-              <img class="page-header__logo" src="build/img/PINK-logo-text.png" alt="Pink" width="74" height="23">
-              <img class="page-header__logo-660" src="build/img/PINK-logo-img-text.png" alt="Pink" width="147" height="40">
-              <img class="page-header__logo-1200" src="build/img/PINK-logo-img.png" alt="Pink" width="147" height="40">
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="build/img/PINK-logo-img.png">
+                  <source media="(min-width: 660px)" srcset="build/img/PINK-logo-img-text.png">
+                  <img class="page-header__logo" src="build/img/PINK-logo-text.png" alt="Pink">
+              </picture>
               <button class="page-header__toggle button-toggle" type="button">
                   <div class="button-toggle__item button-toggle__item-1"></div>
                   <div class="button-toggle__item button-toggle__item-2"></div>
@@ -36,18 +38,26 @@
   </header>
   <main class="page-main">
       <section class="photo-gallery">
-          <p class="photo-gallery__text"></p>
+          <p class="photo-gallery__text">Взгляните на фотографии, которые выкладывают пользователи!
+              Видите, как не хватает ваших?</p>
           <div class="photo-gallery__day-photo day-photo">
-              <img class="day-photo__img" src="" alt="day-photo">
-              <cite class="day-photo__author">Анна</cite>
-              <span class="day-photo__time">(5 минут назад)</span>
+              <span class="day-photo__label">ПАНОРАМА ДНЯ</span>
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="build/img/panorama-1200px.jpg">
+                  <source media="(min-width: 660px)" srcset="build/img/panorama-660px.jpg">
+              <img class="day-photo__img" src="build/img/panorama-320px.jpg" alt="day-photo">
+              </picture>
+              <div class="day-photo__wrapper-post">
+              <span class="day-photo__time"><cite class="day-photo__author">Анна</cite>
+              (5 минут назад)</span>
               <blockquote class="day-photo__text">
                   Прыгать или нет? Напишите в коментарии свой совет и
                   смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </blockquote>
-              <p class="day-photo__like like">
-                  <button class="like__button"></button>Нравится: <span class="like__counter">215</span>
+              <p class="day-photo__like">
+                  <button class="day-photo__button-like"></button>Нравится: <span class="like__counter">215</span>
               </p>
+              </div>
           </div>
           <div class="photo-gallery__list photo-list">
               <div class="photo-gallery__item photo__item">
@@ -132,15 +142,20 @@
       </section>
   </main>
   <footer class="page-footer">
-      <img  class="footer__logo logo" src="" alt="Logo">
-      <ul class="footer__social social">
-          <li class="social__item social__item--tw"><a href=""></a></li>
-          <li class="social__item social__item--fb"><a href=""></a></li>
-          <li class="social__item social__item--y"><a href=""></a></li>
-      </ul>
-      <span class="footer__copyright copyright">Разработано<a class="copyright__link" href="">
-           <img class="copyright__img" src="" alt=""></a>
+      <section class="footer__social footer__social--inner-page social  ">
+          <picture>
+              <source media="(min-width: 1200px)" srcset="build/img/PINK-logo-img-text-footer-1200.png">
+              <img class="footer__logo" src="build/img/PINK-logo-img-text-footer.png" alt="Pink" width="147" height="40">
+          </picture>
+          <ul class="social__list">
+              <li class="social__item social__item--tw"><a class="social__link social__link--tw" href=""></a></li>
+              <li class="social__item social__item--fb"><a class="social__link social__link--fb" href=""></a></li>
+              <li class="social__item social__item--y"><a class="social__link social__link--y" href=""></a></li>
+          </ul>
+          <span class="footer__copyright copyright">Разработано<a class="copyright-link" href="">
+          </a>
        </span>
+      </section>
   </footer>
   <script src="src/js/pink.js"></script>
 </body>
