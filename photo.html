@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="build/css/style.css">
+    <link rel="stylesheet" href="build/css/style-mini.css">
 </head>
 <body class="body">
   <header class="page-header page-header--photo">
@@ -59,86 +59,124 @@
               </p>
               </div>
           </div>
-          <div class="photo-gallery__list photo-list">
+          <div class="photo-gallery__list photo__list">
               <div class="photo-gallery__item photo__item">
-                  <img class="photo__img" src="" alt="day-photo">
-                  <cite class="photo__author">Левон</cite>
-                  <span class="day-photo__time">(5 часов назад)</span>
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-1-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-1-660.jpg">
+                  <img class="photo__img" src="build/img/photo-1-320.jpg" alt="photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Левон  <span class="photo__time">(5 часов назад)</span></cite>
                   <blockquote class="photo__text">
                       Вчера он на луну летал, сегодня в руки к нам попал.
                   </blockquote>
-                  <p class="day-photo__like like">
-                      <button class="like__button"></button>Нравится: <span class="like__counter">356</span>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
                   </p>
+                  </div>
               </div>
               <div class="photo-gallery__item photo__item">
-                  <img class="photo__img" src="" alt="day-photo">
-                  <cite class="photo__author">Антон </cite>
-                  <span class="day-photo__time">(12 часов назад)</span>
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-2-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-2-660.jpg">
+                  <img class="photo__img" src="build/img/photo-2-320.jpg" alt="day-photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Антон  <span class="photo__time">(12 часов назад)</span></cite>
                   <blockquote class="photo__text">
                       Соседи будут рады!
                   </blockquote>
-                  <p class="day-photo__like like">
-                      <button class="like__button"></button>Нравится: <span class="like__counter">356</span>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
                   </p>
+                  </div>
               </div>
               <div class="photo-gallery__item photo__item">
-                  <img class="photo__img" src="" alt="day-photo">
-                  <cite class="photo__author">Борис </cite>
-                  <span class="day-photo__time">(20 часов назад)</span>
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-3-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-3-660.jpg">
+                  <img class="photo__img" src="build/img/photo-3-320.jpg" alt="photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Борис  <span class="photo__time"> (20 часов назад)</span></cite>
                   <blockquote class="photo__text">
                       Здесь могла быть ваша цитата о высоком и вечном.
                   </blockquote>
-                  <p class="day-photo__like like">
-                      <button class="like__button"></button>Нравится: <span class="like__counter">356</span>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
                   </p>
+                  </div>
               </div>
               <div class="photo-gallery__item photo__item">
-                  <img class="photo__img" src="" alt="day-photo">
-                  <cite class="photo__author">Сергей</cite>
-                  <span class="day-photo__time">(25 часов назад)</span>
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-4-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-4-660.jpg">
+                  <img class="photo__img" src="build/img/photo-4-320.jpg" alt="day-photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Сергей  <span class="photo__time"> (25 часов назад)</span></cite>
                   <blockquote class="photo__text">
                       Самая кубанская в мире!
                   </blockquote>
-                  <p class="day-photo__like like">
-                      <button class="like__button"></button>Нравится: <span class="like__counter">356</span>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
                   </p>
+                  </div>
               </div>
               <div class="photo-gallery__item photo__item">
-                  <img class="photo__img" src="" alt="day-photo">
-                  <cite class="photo__author">Максим </cite>
-                  <span class="day-photo__time">(40 часов назад)</span>
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-5-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-5-660.jpg">
+                      <img  class="photo__img" src="build/img/photo-5-320.jpg" alt="day-photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Максим  <span class="photo__time">(40 часов назад)</span> </cite>
                   <blockquote class="photo__text">
                       Где снег-то?
                   </blockquote>
-                  <p class="day-photo__like like">
-                      <button class="like__button"></button>Нравится: <span class="like__counter">356</span>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
                   </p>
+                  </div>
               </div>
               <div class="photo-gallery__item photo__item">
-                  <img class="photo__img" src="" alt="day-photo">
-                  <cite class="photo__author">Надежда</cite>
-                  <span class="day-photo__time">(45 часов назад)</span>
+                  <picture>
+                      <source media="(min-width: 1200px)" srcset="build/img/photo-6-1200.jpg">
+                      <source media="(min-width: 660px)" srcset="build/img/photo-6-660.jpg">
+                  <img  class="photo__img" src="build/img/photo-6-320.jpg" alt="day-photo">
+                  </picture>
+                  <div class="photo__wrapper">
+                  <cite class="photo__author">Надежда <span class="photo__time">(45 часов назад)</span></cite>
+
                   <blockquote class="photo__text">
                       Всем GM и взаимные лайки!
                   </blockquote>
-                  <p class="day-photo__like like">
-                      <button class="like__button"></button>Нравится: <span class="like__counter">356</span>
+                  <p class="photo__like like">
+                      <button class="photo__button-like"></button>Нравится: <span class="like__counter">356</span>
                   </p>
+                  </div>
               </div>
           </div>
       </section>
       <section class="photo-upload">
-          <p class="photo-upload__text">Затмите их всех! Выкладывайте все,
+          <div class="photo-upload__text-wrapper">
+          <p class="photo-upload__text">Затмите их всех! <br> Выкладывайте все,
               что накопилось в телефоне!</p>
-          <form action="photo-upload__form">
-              <img class="photo-upload__img" src="" alt="">
+          </div>
+          <div class="photo-upload__form-wrapper">
+              <picture>
+                  <source media="(min-width: 660px)" srcset="build/img/photo-up-660.jpg">
+                  <img class="photo-upload__img" src="build/img/photo-up-320.jpg" alt="">
+              </picture>
+          <form class="photo-upload__form" action="">
               <input class="photo-upload__range photo-upload__range--cut" type="range">
               <input class="photo-upload__range photo-upload__range--brightness" type="range">
               <input class="photo-upload__range photo-upload__range--contrast" type="range">
               <button class="photo-upload__button button button--mod280-red" type="button">Запостить</button>
               <button class="photo-upload__button button button--mod280-grey" type="reset">Отмена</button>
           </form>
+          </div>
       </section>
   </main>
   <footer class="page-footer">
