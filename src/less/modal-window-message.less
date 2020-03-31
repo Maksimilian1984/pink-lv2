@@ -1,0 +1,84 @@
+.modal-window-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 320px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+
+  background-color: white;
+  background-image: linear-gradient(to top, #f2f2f2 , #f2f2f2 165px, #ffffff 165px, #ffffff);
+
+
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-window-message__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-family: @fontOpenSansBold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-window-message__text {
+  width: 300px;
+  margin: 0;
+  margin-bottom: 80px;
+
+  font-family: @fontOpenSans;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+@media (min-width: @tablet) {
+  .modal-window-message {
+    width: 460px;
+  }
+  .modal-window-message__title {
+    width: 350px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-window-message__text {
+    width: 350px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    br {
+      display: none;
+    }
+  }
+  .modal-window-message__close {
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .modal-window-message {
+    width: 780px;
+  }
+  .modal-window-message__title {
+    width: 420px;
+
+  }
+
+  .modal-window-message__text {
+    width: 520px;
+    margin-bottom: 90px;
+  }
+  .modal-window-message__close {
+    width: 460px;
+  }
+  
+}
